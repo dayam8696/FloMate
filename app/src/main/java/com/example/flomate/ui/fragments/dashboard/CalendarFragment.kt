@@ -24,8 +24,6 @@ class CalendarFragment : BaseFragment() {
 
     private val viewModel: DashboardViewModel by activityViewModels()
 
-    private lateinit var changeStoreDialogFragment: DialogueFragment
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -49,6 +47,7 @@ class CalendarFragment : BaseFragment() {
                 is ApiResult.Success -> {
                     if (it.data != null) {
                         readDataAndPopulateCalendar(it.data.dateRanges)
+                        updateUI(it.data.dateRanges)
                     }
                 }
 
@@ -58,6 +57,70 @@ class CalendarFragment : BaseFragment() {
             }
         }
 
+    }
+
+    private fun updateUI(dateRanges: List<DateRange>) {
+
+        binding.averagePeriodLength.text = "${calculateAverageDays(dateRanges)} Days"
+        binding.averageCycleLength.text = "${calculateAverageDays(dateRanges) + 24} Days"
+        binding.totalDaysThisYear.text = "${totalDaysInYear(dateRanges)} Days"
+        binding.totalDaysThisMonth.text = "${totalPeriodDaysInCurrentMonth(dateRanges)} Days"
+
+    }
+
+
+    private fun totalPeriodDaysInCurrentMonth(periodDays: List<DateRange>): Int {
+        val calendar = Calendar.getInstance()
+        val currentMonth = calendar.get(Calendar.MONTH) + 1 // Adjusted because months start from 0
+        val currentYear = calendar.get(Calendar.YEAR)
+        val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+        var totalPeriodDays = 0
+
+        for (period in periodDays) {
+            val startDate = dateFormat.parse(period.startDate)
+            val endDate = dateFormat.parse(period.endDate)
+            val startCal = Calendar.getInstance()
+            val endCal = Calendar.getInstance()
+            startCal.time = startDate
+            endCal.time = endDate
+
+            val periodMonth =
+                startCal.get(Calendar.MONTH) + 1 // Adjusted because months start from 0
+            val periodYear = startCal.get(Calendar.YEAR)
+
+            if (periodMonth == currentMonth && periodYear == currentYear) {
+                // Calculate the days only if the period falls within the current month and year
+                val daysInPeriod =
+                    ((endDate.time - startDate.time) / (1000 * 60 * 60 * 24)).toInt() + 1
+                totalPeriodDays += daysInPeriod
+            }
+        }
+        return totalPeriodDays
+    }
+
+
+    private fun totalDaysInYear(dateRanges: List<DateRange>): Int {
+        var totalDays = 0
+        val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+        for (dateRange in dateRanges) {
+            val startDate = dateFormat.parse(dateRange.startDate)
+            val endDate = dateFormat.parse(dateRange.endDate)
+            val days = ((endDate.time - startDate.time) / (1000 * 60 * 60 * 24)).toInt() + 1
+            totalDays += days
+        }
+        return totalDays
+    }
+
+    private fun calculateAverageDays(dateRanges: List<DateRange>): Int {
+        val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH)
+        var totalDays = 0L
+        for (dateRange in dateRanges) {
+            val startDate = dateFormat.parse(dateRange.startDate)
+            val endDate = dateFormat.parse(dateRange.endDate)
+            val difference = endDate!!.time - startDate!!.time
+            totalDays += difference / (1000 * 60 * 60 * 24)
+        }
+        return (totalDays.toDouble() / dateRanges.size).toInt()
     }
 
     private fun setupClickListeners() {
@@ -70,8 +133,6 @@ class CalendarFragment : BaseFragment() {
                 dialogFragment.show(childFragmentManager, "dialogFragment")
             }
         }
-
-
     }
 
     private fun readDataAndPopulateCalendar(dateRanges: List<DateRange>) {
