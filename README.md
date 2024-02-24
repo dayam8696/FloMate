@@ -11,14 +11,13 @@ FlowMate is a comprehensive mobile application designed to address critical aspe
 ## Project Goals 🌻
 Our primary goal is to empower women worldwide by providing them with essential tools and resources for effective menstrual cycle management, ultimately enhancing their overall menstrual health and well-being.
 
-## Future Scope 🌷
-In the future, we plan to introduce an emergency notification feature, similar to Apple Watches, alerting designated contacts in case of serious menstrual health issues.
+## Screenshots 📱
+![Screenshot 1](/path/to/screenshot1.png)
+![Screenshot 2](/path/to/screenshot2.png)
+![Screenshot 3](/path/to/screenshot3.png)
 
 ## Usage 🌼
 To use the app, simply download it from the app store on your mobile device and follow the on-screen instructions to set up your account. For any assistance or queries, feel free to contact our support team through the app's chatbot feature.
-
-## Figma UI Design 🎨
-Explore our app's user interface design on Figma [here](https://www.figma.com/file/LHsLTuBLNBjGqc9hxTKkaU/hack-jmi?type=design&node-id=0%3A1&mode=design&t=B4aDDH9enNndIYV2-1).
 
 ## Contributors 🌺
 - [Ameen-Ur-Rehman](https://github.com/AmeenUrRehman)
