@@ -12,8 +12,8 @@ import androidx.fragment.app.activityViewModels
 import com.example.caringcatalysts.R
 import com.example.caringcatalysts.database.SharedService
 import com.example.flomate.ui.activites.DashboardActivity
-import com.example.caringcatalysts.utils.Constants.RC_SIGN_IN
-import com.example.caringcatalysts.utils.isValidEmail
+import com.example.flomate.utils.Constants.RC_SIGN_IN
+import com.example.flomate.utils.isValidEmail
 import com.example.caringcatalysts.viewModels.AuthViewModel
 import com.example.flomate.databinding.LogInFragmentBinding
 import com.example.flomate.ui.Fragments.BaseFragment

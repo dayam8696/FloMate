@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.caringcatalysts.R
 import com.example.caringcatalysts.databinding.SignUpFragmentBinding
 import com.example.caringcatalysts.ui.fragments.BaseFragment
-import com.example.caringcatalysts.utils.isValidEmail
+import com.example.flomate.utils.isValidEmail
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpFragment : BaseFragment() {
