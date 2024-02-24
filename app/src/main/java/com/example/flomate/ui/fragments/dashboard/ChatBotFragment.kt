@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebSettings
 import com.example.flomate.databinding.ChatBotFragmentBinding
 import com.example.flomate.ui.fragments.BaseFragment
+import com.example.flomate.utils.Constants.CHAT_BOT
 
 class ChatBotFragment : BaseFragment() {
     private val binding by lazy { ChatBotFragmentBinding.inflate(layoutInflater) }
@@ -24,12 +24,12 @@ class ChatBotFragment : BaseFragment() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.startchat.setOnClickListener {
-            openUrl("https://ameenurrehman.github.io/Valentina/")
+            openUrl()
         }
     }
 
-    private fun openUrl(link: String) {
-        val uri = Uri.parse(link)
+    private fun openUrl() {
+        val uri = Uri.parse(CHAT_BOT)
         val intent = Intent(Intent.ACTION_VIEW, uri)
         startActivity(intent)
     }
