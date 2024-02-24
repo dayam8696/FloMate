@@ -7,4 +7,9 @@ object Constants {
 
     const val RC_SIGN_IN = 40
 
+    const val MAP_URL =
+        "https://www.google.com/maps/d/edit?mid=1mg0TWcSUTJKkSIuio7wLSmMD32AvBvw&usp=sharing"
+
+    const val CHAT_BOT = "https://ameenurrehman.github.io/Valentina/"
+
 }
