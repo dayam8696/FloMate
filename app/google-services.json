@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "198171807810",
+    "project_id": "flomate-64beb",
+    "storage_bucket": "flomate-64beb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198171807810:android:88ee13492de0633fa35ddb",
+        "android_client_info": {
+          "package_name": "com.example.flomate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198171807810-led4uj2lbpb8nrejcaq5l13psssh2h1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flomate",
+            "certificate_hash": "7a136df28c0017f9b8b1223ac62797307186d6f4"
+          }
+        },
+        {
+          "client_id": "198171807810-u9a03pgs2l26rlm9chpjrtmummrccsn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_pSmcUBxA8qeqfqeeCZRicM0xb67M7RM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198171807810-u9a03pgs2l26rlm9chpjrtmummrccsn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
