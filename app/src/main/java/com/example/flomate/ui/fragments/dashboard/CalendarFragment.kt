@@ -11,6 +11,7 @@ import com.example.flomate.controller.ApiResult
 import com.example.flomate.database.SharedService
 import com.example.flomate.databinding.FragmentCalendarBinding
 import com.example.flomate.model.data_list.DateRange
+import com.example.flomate.ui.dialogue_box.DialogueFragment
 import com.example.flomate.ui.fragments.BaseFragment
 import com.example.flomate.viewModels.DashboardViewModel
 import java.text.SimpleDateFormat
@@ -23,6 +24,8 @@ class CalendarFragment : BaseFragment() {
 
     private val viewModel: DashboardViewModel by activityViewModels()
 
+    private lateinit var changeStoreDialogFragment: DialogueFragment
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -33,6 +36,7 @@ class CalendarFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupClickListeners()
 
         viewModel.getListTest(SharedService.emailId ?: "")
 
@@ -51,6 +55,19 @@ class CalendarFragment : BaseFragment() {
                 is ApiResult.Error -> {
                     showToast("Something Went Wrong!!")
                 }
+            }
+        }
+
+    }
+
+    private fun setupClickListeners() {
+        binding.updateBtn.setOnClickListener {
+            binding.updateBtn.setOnClickListener {
+                val dialogFragment = DialogueFragment()
+                dialogFragment.callBack = {
+                    viewModel.getListTest(SharedService.emailId ?: "")
+                }
+                dialogFragment.show(childFragmentManager, "dialogFragment")
             }
         }
 

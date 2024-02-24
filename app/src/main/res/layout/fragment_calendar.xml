@@ -32,7 +32,7 @@
             app:todayLabelColor="#E51A5E" />
 
         <Button
-            android:id="@+id/updatebtn"
+            android:id="@+id/updateBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#E51A5E"
