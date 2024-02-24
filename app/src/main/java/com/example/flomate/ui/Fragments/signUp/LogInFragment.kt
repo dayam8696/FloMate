@@ -1,4 +1,4 @@
-package com.example.caringcatalysts.ui.fragments.signUp
+package com.example.flomate.ui.Fragments.signUp
 
 import android.app.Activity
 import android.content.Intent
@@ -11,9 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.example.caringcatalysts.R
 import com.example.caringcatalysts.database.SharedService
-import com.example.caringcatalysts.databinding.LogInFragmentBinding
-import com.example.caringcatalysts.ui.activities.DashboardActivity
-import com.example.caringcatalysts.ui.fragments.BaseFragment
+import com.example.flomate.ui.activites.DashboardActivity
 import com.example.caringcatalysts.utils.Constants.RC_SIGN_IN
 import com.example.caringcatalysts.utils.isValidEmail
 import com.example.caringcatalysts.viewModels.AuthViewModel

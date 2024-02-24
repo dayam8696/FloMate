@@ -1,4 +1,4 @@
-package com.example.caringcatalysts.ui.fragments.dashboard
+package com.example.flomate.ui.Fragments.dashboard
 
 import android.annotation.SuppressLint
 import android.content.Intent

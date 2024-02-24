@@ -1,4 +1,4 @@
-package com.example.caringcatalysts.ui.fragments.dashboard
+package com.example.flomate.ui.Fragments.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.activityViewModels
 import com.applandeo.materialcalendarview.CalendarView
 import com.applandeo.materialcalendarview.EventDay
 import com.example.caringcatalysts.R
-import com.example.caringcatalysts.controller.ApiResult
+import com.example.flomate.controller.ApiResult
 import com.example.caringcatalysts.databinding.FragmentCalendarBinding
 import com.example.caringcatalysts.ui.fragments.BaseFragment
 import com.example.caringcatalysts.viewModels.DashboardViewModel
