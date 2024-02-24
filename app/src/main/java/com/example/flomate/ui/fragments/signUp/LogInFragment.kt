@@ -1,4 +1,4 @@
-package com.example.flomate.ui.Fragments.signUp
+package com.example.flomate.ui.fragments.signUp
 
 import android.app.Activity
 import android.content.Intent
@@ -9,14 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import com.example.caringcatalysts.R
-import com.example.caringcatalysts.database.SharedService
-import com.example.flomate.ui.activites.DashboardActivity
+import com.example.flomate.R
+import com.example.flomate.database.SharedService
+import com.example.flomate.databinding.LogInFragmentBinding
+import com.example.flomate.ui.activities.DashboardActivity
+import com.example.flomate.ui.fragments.BaseFragment
 import com.example.flomate.utils.Constants.RC_SIGN_IN
 import com.example.flomate.utils.isValidEmail
-import com.example.caringcatalysts.viewModels.AuthViewModel
-import com.example.flomate.databinding.LogInFragmentBinding
-import com.example.flomate.ui.Fragments.BaseFragment
+import com.example.flomate.viewModels.AuthViewModel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult

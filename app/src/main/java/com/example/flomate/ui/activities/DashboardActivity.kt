@@ -1,11 +1,10 @@
-package com.example.flomate.ui.activites
+package com.example.flomate.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.example.caringcatalysts.R
-import com.example.caringcatalysts.databinding.ActivityDashboardBinding
+import com.example.flomate.R
 import com.example.flomate.databinding.ActivityDashboardBinding
 import dagger.hilt.android.AndroidEntryPoint
 

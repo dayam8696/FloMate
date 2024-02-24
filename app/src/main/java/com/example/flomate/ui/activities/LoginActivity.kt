@@ -1,8 +1,7 @@
-package com.example.flomate.ui.activites
+package com.example.flomate.ui.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.caringcatalysts.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.flomate.R
 import dagger.hilt.android.AndroidEntryPoint
 

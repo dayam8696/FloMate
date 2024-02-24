@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_dashboard.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.CalendarFragment"
+        android:label="CalendarFragment"
+        tools:layout="@layout/fragment_calendar"/>
+    <fragment
+        android:id="@+id/chatbotFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.ChatBotFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/chat_bot_fragment" />
+
+</navigation>

@@ -1,4 +1,4 @@
-package com.example.flomate.ui.Fragments
+package com.example.flomate.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

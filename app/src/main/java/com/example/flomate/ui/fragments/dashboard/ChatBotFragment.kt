@@ -1,4 +1,4 @@
-package com.example.flomate.ui.Fragments.dashboard
+package com.example.flomate.ui.fragments.dashboard
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,9 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebSettings
-import com.example.caringcatalysts.databinding.ChatBotFragmentBinding
-import com.example.caringcatalysts.ui.fragments.BaseFragment
-import com.example.flomate.ui.Fragments.BaseFragment
+import com.example.flomate.databinding.ChatBotFragmentBinding
+import com.example.flomate.ui.fragments.BaseFragment
 
 class ChatBotFragment : BaseFragment() {
     private val binding by lazy { ChatBotFragmentBinding.inflate(layoutInflater) }

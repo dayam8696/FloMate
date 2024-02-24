@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">FloMate</string>
+    <string name="Empty_fields_are_not_allowed">Empty fields are not allowed</string>
+    <string name="Enter_Valid_Email">Enter valid email</string>
+    <string name="Password_is_not_matching">Password is not matching</string>
+    <string name="menstrual_cycle_tracker">Menstrual Cycle Tracker</string>
+    <string name="welcome_to_an_easier_period">Welcome to an easier period</string>
+    <string name="track_your_cycle_symptoms_and_more_get_personalized_insights">Track your cycle, symptoms, and more.\nGet personalized insights</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_registered_log_in">Already Registered? Log In!</string>
+    <string name="log_in_to_your_account">Log in to your account</string>
+    <string name="log_in">Log In</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? Sign Up</string>
+    <string name="or">OR</string>
+    <string name="log_in_with_google">Log in with Google</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+    <string name="average_cycle_length">Average cycle length</string>
+    <string name="average_period_length">Average period length</string>
+    <string name="total_period_days_in_last_year">Total period days in last year</string>
+    <string name="total_period_days_in_last_month">Total period days in last month</string>
+    <string name="what_to_focus_on">What to focus on</string>
+    <string name="do_s_and_don_ts">Do\'s and Don\'ts</string>
+    <string name="hit_workout">Hit workout</string>
+    <string name="try_this_routine">Try this routine</string>
+    <string name="welcome_to_valentina">Welcome to Valentina</string>
+    <string name="valentina_intro">Hello! I\'m Valentina, here to support you with your menstrual health</string>
+    <string name="start_chatting_with_valentina">Start chatting with Valentina</string>
+    <string name="valentina">Valentina</string>
+
 </resources>

@@ -2,10 +2,10 @@ package com.example.flomate.controller
 
 
 import android.util.Log
+import androidx.viewbinding.BuildConfig
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.example.caringcatalysts.ApplicationClass
-import com.example.caringcatalysts.BuildConfig
+import com.example.flomate.ApplicationClass
 import okhttp3.Cache
 import okhttp3.Interceptor
 import okhttp3.MediaType.Companion.toMediaTypeOrNull

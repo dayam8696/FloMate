@@ -1,11 +1,11 @@
-package com.example.caringcatalysts.ui.fragments.dashboard
+package com.example.flomate.ui.fragments.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.flomate.databinding.HomeFragmentBinding
-import com.example.flomate.ui.Fragments.BaseFragment
+import com.example.flomate.ui.fragments.BaseFragment
 
 class HomeFragment: BaseFragment() {
     private val binding by lazy { HomeFragmentBinding.inflate(layoutInflater) }

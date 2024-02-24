@@ -1,13 +1,13 @@
-package com.example.caringcatalysts.ui.fragments.signUp
+package com.example.flomate.ui.fragments.signUp
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.caringcatalysts.R
-import com.example.caringcatalysts.databinding.SignUpFragmentBinding
-import com.example.caringcatalysts.ui.fragments.BaseFragment
+import com.example.flomate.R
+import com.example.flomate.databinding.SignUpFragmentBinding
+import com.example.flomate.ui.fragments.BaseFragment
 import com.example.flomate.utils.isValidEmail
 import com.google.firebase.auth.FirebaseAuth
 
@@ -72,14 +72,14 @@ class SignUpFragment : BaseFragment() {
         }
     }
 
-    private fun showLoader(){
-        binding.progressBar.visibility =View.VISIBLE
-        binding.text.visibility =View.GONE
+    private fun showLoader() {
+        binding.progressBar.visibility = View.VISIBLE
+        binding.text.visibility = View.GONE
     }
 
-    private fun hideLoader(){
-        binding.progressBar.visibility =View.GONE
-        binding.text.visibility =View.VISIBLE
+    private fun hideLoader() {
+        binding.progressBar.visibility = View.GONE
+        binding.text.visibility = View.VISIBLE
     }
 
 }

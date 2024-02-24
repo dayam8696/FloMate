@@ -2,7 +2,7 @@ package com.example.flomate.database
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.caringcatalysts.ApplicationClass
+import com.example.flomate.ApplicationClass
 
 object SharedService {
 
