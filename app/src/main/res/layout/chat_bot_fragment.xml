@@ -22,7 +22,7 @@
       android:layout_marginTop="15dp"
       android:importantForAccessibility="no"
       android:scaleType="centerCrop"
-      android:src="@drawable/valentinafinal" />
+      android:src="@drawable/hey" />
 
   <TextView
       android:layout_width="wrap_content"
