@@ -38,9 +38,9 @@ class OkHttpClientHelper {
         val client: Builder = Builder()
             .addInterceptor(getHttpLoggingInterceptor())
             .addInterceptor(getRequestInterceptor())
-        if (BuildConfig.DEBUG) {
-            getChuckerInterceptor()?.let { client.addInterceptor(it) }
-        }
+//        if (BuildConfig.DEBUG) {
+        getChuckerInterceptor()?.let { client.addInterceptor(it) }
+//        }
         client.cache(cache)
         return client.build()
     }

@@ -5,14 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import com.applandeo.materialcalendarview.CalendarView
 import com.applandeo.materialcalendarview.EventDay
-import com.example.flomate.viewModels.DashboardViewModel
 import com.example.flomate.R
 import com.example.flomate.controller.ApiResult
+import com.example.flomate.database.SharedService
 import com.example.flomate.databinding.FragmentCalendarBinding
+import com.example.flomate.model.data_list.DateRange
 import com.example.flomate.ui.fragments.BaseFragment
+import com.example.flomate.viewModels.DashboardViewModel
+import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Locale
 
 
 class CalendarFragment : BaseFragment() {
@@ -31,7 +34,7 @@ class CalendarFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.getListTest()
+        viewModel.getListTest(SharedService.emailId ?: "")
 
         viewModel.getListTestResponse.observe(viewLifecycleOwner) {
             when (it) {
@@ -40,7 +43,9 @@ class CalendarFragment : BaseFragment() {
                 }
 
                 is ApiResult.Success -> {
-                    showToast("Data Came")
+                    if (it.data != null) {
+                        readDataAndPopulateCalendar(it.data.dateRanges)
+                    }
                 }
 
                 is ApiResult.Error -> {
@@ -49,35 +54,51 @@ class CalendarFragment : BaseFragment() {
             }
         }
 
-        val startDate = Calendar.getInstance()
-        startDate.set(2024, Calendar.FEBRUARY, 10)
 
-        val endDate = Calendar.getInstance()
-        endDate.set(2024, Calendar.FEBRUARY, 15)
+    }
 
-        setEventsBetweenDates(startDate, endDate, R.drawable.blood_drop_icon, binding.calendarView)
+    private fun readDataAndPopulateCalendar(dateRanges: List<DateRange>) {
+        val allHighlightedDays = mutableListOf<EventDay>()
 
+        dateRanges.forEach { range ->
+            val startDate = Calendar.getInstance()
+            startDate.time =
+                SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).parse(range.startDate)!!
+
+            val endDate = Calendar.getInstance()
+            endDate.time =
+                SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).parse(range.endDate)!!
+
+            setEventsBetweenDates(
+                startDate,
+                endDate,
+                R.drawable.blood_drop_icon,
+                allHighlightedDays
+            )
+        }
+
+        binding.calendarView.setEvents(allHighlightedDays)
     }
 
     private fun setEventsBetweenDates(
         startDate: Calendar,
         endDate: Calendar,
         resourceId: Int,
-        binding: CalendarView
+        existingEvents: MutableList<EventDay>
     ) {
-        val highlightedDays = mutableListOf<EventDay>()
-
         val calendar = startDate.clone() as Calendar
         while (calendar <= endDate) {
             val highlightedDay = EventDay(
                 calendar.clone() as Calendar,
                 resourceId
             )
-            highlightedDays.add(highlightedDay)
+            existingEvents.add(highlightedDay)
             calendar.add(Calendar.DATE, 1)
-        }
 
-        binding.setEvents(highlightedDays)
+            if (calendar.get(Calendar.MONTH) != startDate.get(Calendar.MONTH)) {
+                break
+            }
+        }
     }
 
 
