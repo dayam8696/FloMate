@@ -13,9 +13,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
+            android:fontFamily="serif"
             android:text="Today, Day 14"
             android:textColor="#1C0D12"
             android:textSize="18sp"
@@ -26,9 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="You're in the Ovulation phase"
-            android:fontFamily="serif"
             android:textColor="#1C0D12"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -77,9 +77,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="Eat protein and healthy fats"
                         android:textColor="#964F66"
-                        android:fontFamily="serif"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -114,9 +114,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="Try high-intensity workouts"
                         android:textColor="#964F66"
-                        android:fontFamily="serif"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -144,9 +144,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="Mindfulness"
                         android:textColor="#1C0D12"
-                        android:fontFamily="serif"
                         android:textSize="20sp" />
 
                     <TextView
@@ -181,8 +181,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/what_to_focus_on"
                     android:fontFamily="serif"
+                    android:text="@string/what_to_focus_on"
                     android:textColor="#1C0D12"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -222,17 +222,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="serif"
                     android:text="@string/hit_workout"
                     android:textColor="#1C0D12"
-                    android:fontFamily="serif"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/try_this_routine"
                     android:fontFamily="serif"
+                    android:text="@string/try_this_routine"
                     android:textColor="#964F66"
                     android:textSize="18sp" />
 
