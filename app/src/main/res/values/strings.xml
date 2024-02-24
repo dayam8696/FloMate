@@ -21,8 +21,8 @@
     <string name="profile">Profile</string>
     <string name="average_cycle_length">Average cycle length</string>
     <string name="average_period_length">Average period length</string>
-    <string name="total_period_days_in_last_year">Total period days in last year</string>
-    <string name="total_period_days_in_last_month">Total period days in last month</string>
+    <string name="total_period_days_in_last_year">Total period days in this year</string>
+    <string name="total_period_days_in_last_month">Total period days in this month</string>
     <string name="what_to_focus_on">What to focus on</string>
     <string name="do_s_and_don_ts">Do\'s and Don\'ts</string>
     <string name="hit_workout">Hit workout</string>
@@ -33,5 +33,6 @@
     <string name="valentina">Valentina</string>
     <string name="to">to</string>
     <string name="submit">Submit</string>
+    <string name="loading">Loading</string>
 
 </resources>

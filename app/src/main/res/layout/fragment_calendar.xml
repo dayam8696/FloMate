@@ -10,9 +10,6 @@
         android:layout_height="0dp"
         android:orientation="vertical">
 
-
-
-
         <com.applandeo.materialcalendarview.CalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
@@ -51,12 +48,13 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/averageCycleLength"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="31 days"
+            android:fontFamily="serif"
+            android:text="@string/loading"
             android:textColor="#964F66"
             android:textSize="15sp" />
 
@@ -72,32 +70,34 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/averagePeriodLength"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="31 days"
+            android:text="@string/loading"
             android:textColor="#964F66"
             android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="25dp"
+            android:fontFamily="serif"
             android:text="@string/total_period_days_in_last_year"
             android:textColor="#1C0D12"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/totalDaysThisYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="31 days"
+            android:fontFamily="serif"
+            android:text="@string/loading"
             android:textColor="#964F66"
             android:textSize="15sp" />
 
@@ -114,12 +114,13 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/totalDaysThisMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="31 days"
+            android:fontFamily="serif"
+            android:text="@string/loading"
             android:textColor="#964F66"
             android:textSize="15sp" />
 
