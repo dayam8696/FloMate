@@ -3,11 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical">
 
-  <WebView
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:fontFamily="serif"
+      android:text="@string/welcome_to_valentina"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+  <ImageView
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/webview"/>
+      android:layout_height="350dp"
+      android:layout_marginTop="15dp"
+      android:importantForAccessibility="no"
+      android:scaleType="centerCrop"
+      android:src="@drawable/valentinafinal" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="25dp"
+      android:fontFamily="serif"
+      android:gravity="center"
+      android:text="@string/valentina_intro"
+      android:textSize="25sp"
+      android:textStyle="bold" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/startchat"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="35dp"
+      app:cardBackgroundColor="#E51A5E"
+      app:cardCornerRadius="50dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:paddingStart="20dp"
+          android:paddingTop="10dp"
+          android:paddingEnd="20dp"
+          android:paddingBottom="10dp"
+          android:text="@string/start_chatting_with_valentina"
+          android:textColor="#FFFFFF"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+  </androidx.cardview.widget.CardView>
 
 </LinearLayout>

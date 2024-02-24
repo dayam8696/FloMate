@@ -14,6 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:text="@string/log_in_to_your_account"
+        android:fontFamily="serif"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -29,6 +30,7 @@
         android:gravity="start|center"
         android:hint="@string/email"
         android:importantForAutofill="no"
+        android:fontFamily="serif"
         android:inputType="textEmailAddress"
         android:padding="6dp"
         android:textColor="#876370"
@@ -48,6 +50,7 @@
         android:hint="@string/password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:fontFamily="serif"
         android:padding="6dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#876370"
@@ -78,6 +81,7 @@
                 android:paddingTop="10dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="10dp"
+                android:fontFamily="serif"
                 android:text="@string/log_in"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
@@ -105,6 +109,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/don_t_have_an_account_sign_up"
+        android:fontFamily="serif"
         android:textColor="#E51A5E"
         android:textSize="15sp" />
 
@@ -115,6 +120,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:text="@string/or"
+        android:fontFamily="serif"
         android:textSize="18sp" />
 
 
@@ -149,7 +155,14 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:text="@string/log_in_with_google"
+                android:fontFamily="serif"
                 android:textSize="23sp" />
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
 
 
         </LinearLayout>

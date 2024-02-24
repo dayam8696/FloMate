@@ -20,5 +20,10 @@
         android:name="com.example.flomate.ui.fragments.dashboard.ChatBotFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/chat_bot_fragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/map_fragment"/>
 
 </navigation>

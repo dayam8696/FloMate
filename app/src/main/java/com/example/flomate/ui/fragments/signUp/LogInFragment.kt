@@ -50,6 +50,7 @@ class LogInFragment : BaseFragment() {
         viewModel.authState.observe(viewLifecycleOwner) { state ->
             when (state) {
                 is AuthViewModel.AuthState.Authenticated -> {
+                    hideLoader()
                     openIntent()
                 }
 
@@ -71,6 +72,7 @@ class LogInFragment : BaseFragment() {
         }
 
         binding.loginWithGoogle.setOnClickListener {
+            showLoader()
             viewModel.signInWithGoogle()
         }
     }
@@ -84,6 +86,7 @@ class LogInFragment : BaseFragment() {
             )
             task.addOnCompleteListener { authTask ->
                 if (authTask.isSuccessful) {
+                    hideLoader()
                     val userData = firebaseAuth.currentUser
                     SharedService.isLogin = true
                     SharedService.emailId = userData?.email
@@ -91,6 +94,7 @@ class LogInFragment : BaseFragment() {
                     Log.d("loooggg", userData?.email ?: "null")
                 } else {
                     // Handle authentication failure
+                    hideLoader()
                     Toast.makeText(requireContext(), "Something Went Wrong!!", Toast.LENGTH_SHORT)
                         .show()
                 }

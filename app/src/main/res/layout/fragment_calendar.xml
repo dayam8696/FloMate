@@ -11,6 +11,8 @@
         android:orientation="vertical">
 
 
+
+
         <com.applandeo.materialcalendarview.CalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
@@ -34,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="serif"
             android:text="@string/average_cycle_length"
             android:textColor="#1C0D12"
             android:textSize="20sp"
@@ -42,6 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:text="31 days"
@@ -53,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="25dp"
+            android:fontFamily="serif"
             android:text="@string/average_period_length"
             android:textColor="#1C0D12"
             android:textSize="20sp"
@@ -70,6 +75,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="25dp"
             android:text="@string/total_period_days_in_last_year"
@@ -80,6 +86,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:text="31 days"
@@ -91,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="25dp"
+            android:fontFamily="serif"
             android:text="@string/total_period_days_in_last_month"
             android:textColor="#1C0D12"
             android:textSize="20sp"
@@ -99,6 +107,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:text="31 days"

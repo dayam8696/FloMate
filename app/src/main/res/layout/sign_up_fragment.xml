@@ -11,6 +11,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:text="@string/menstrual_cycle_tracker"
+        android:fontFamily="serif"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -28,6 +29,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:text="@string/welcome_to_an_easier_period"
+        android:fontFamily="serif"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -38,6 +40,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="@string/track_your_cycle_symptoms_and_more_get_personalized_insights"
+        android:fontFamily="serif"
         android:textSize="15sp" />
 
     <EditText
@@ -50,6 +53,7 @@
         android:backgroundTint="#FBDEE8"
         android:gravity="start|center"
         android:hint="@string/email"
+        android:fontFamily="serif"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:padding="6dp"
@@ -68,6 +72,7 @@
         android:backgroundTint="#FBDEE8"
         android:gravity="start|center"
         android:hint="@string/password"
+        android:fontFamily="serif"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:padding="6dp"
@@ -85,6 +90,7 @@
         android:background="@drawable/rectangle_shape"
         android:backgroundTint="#FBDEE8"
         android:gravity="start|center"
+        android:fontFamily="serif"
         android:hint="@string/confirm_password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
@@ -120,6 +126,7 @@
                 android:paddingEnd="20dp"
                 android:paddingBottom="10dp"
                 android:text="@string/sign_up"
+                android:fontFamily="serif"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -145,6 +152,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/already_registered_log_in"
+        android:fontFamily="serif"
         android:textColor="#E51A5E"
         android:textSize="15sp" />
 

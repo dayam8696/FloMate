@@ -23,16 +23,9 @@ class ChatBotFragment : BaseFragment() {
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-        binding.webview.settings.javaScriptEnabled = true
-        binding.webview.settings.mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
-        binding.webview.settings.userAgentString =
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
-
-        binding.webview.loadUrl("https://ameenurrehman.github.io/Valentina-/")
-
+        binding.startchat.setOnClickListener {
+            openUrl("https://ameenurrehman.github.io/Valentina-/")
+        }
     }
 
     private fun openUrl(link: String) {
