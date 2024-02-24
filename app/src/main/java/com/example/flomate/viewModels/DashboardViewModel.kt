@@ -28,6 +28,17 @@ open class DashboardViewModel @Inject constructor(private val repo: DashboardRep
     }
 
 
+    private val _getHomeListTestResponse = MutableLiveData<ApiResult<ListDataResponse>>()
+    val getHomeListTestResponse: LiveData<ApiResult<ListDataResponse>>
+        get() = _getHomeListTestResponse
+
+    fun getHomeListTest(email: String) {
+        viewModelScope.launch {
+            _getHomeListTestResponse.value = repo.getListTest(email)
+        }
+    }
+
+
     private val _setDatesResponse = MutableLiveData<ApiResult<Unit>>()
     val setDatesResponse: LiveData<ApiResult<Unit>>
         get() = _setDatesResponse
