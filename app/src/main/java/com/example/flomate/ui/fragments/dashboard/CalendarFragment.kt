@@ -34,6 +34,7 @@ class CalendarFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navigationVisibility(true)
         setupClickListeners()
 
         viewModel.getListTest(SharedService.emailId ?: "")

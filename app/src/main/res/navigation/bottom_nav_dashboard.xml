@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.flomate.ui.fragments.dashboard.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.flomate.ui.fragments.dashboard.CalendarFragment"
@@ -25,5 +29,9 @@
         android:name="com.example.flomate.ui.fragments.dashboard.MapFragment"
         android:label="MapFragment"
         tools:layout="@layout/map_fragment"/>
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.WorkoutFragment"
+        android:label="WorkoutFragment" />
 
 </navigation>

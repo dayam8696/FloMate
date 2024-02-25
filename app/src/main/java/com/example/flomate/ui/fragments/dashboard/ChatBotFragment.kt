@@ -23,6 +23,7 @@ class ChatBotFragment : BaseFragment() {
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        navigationVisibility(true)
         binding.startchat.setOnClickListener {
             openUrl()
         }

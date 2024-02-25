@@ -165,6 +165,7 @@
 
 
         <LinearLayout
+            android:id="@+id/FocusBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -206,12 +207,14 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/WorkoutBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

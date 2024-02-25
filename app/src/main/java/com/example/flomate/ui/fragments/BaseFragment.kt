@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 import com.example.flomate.databinding.BaseFragmentBinding
+import com.example.flomate.ui.activities.DashboardActivity
 
 open class BaseFragment : Fragment() {
     private val binding by lazy { BaseFragmentBinding.inflate(layoutInflater) }
@@ -27,5 +28,11 @@ open class BaseFragment : Fragment() {
 
     fun navigateTo(id: Int) {
         findNavController().navigate(id)
+    }
+
+    fun navigationVisibility(isVisible :Boolean){
+
+        (activity as DashboardActivity).navigationVisibility(isVisible)
+
     }
 }

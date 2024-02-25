@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.flomate.R
 import com.example.flomate.databinding.HomeFragmentBinding
 import com.example.flomate.ui.fragments.BaseFragment
 import com.example.flomate.viewModels.DashboardViewModel
@@ -24,6 +26,10 @@ class HomeFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navigationVisibility(true)
+        binding.WorkoutBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_workoutFragment)
+        }
 
     }
 

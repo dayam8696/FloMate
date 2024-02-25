@@ -12,4 +12,6 @@ object Constants {
 
     const val CHAT_BOT = "https://ameenurrehman.github.io/Valentina/"
 
+    const val WORK_OUT = "https://www.sweat.com/blogs/life/exercise-during-period"
+
 }
