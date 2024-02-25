@@ -26,14 +26,14 @@
                 android:gravity="center"
                 android:text="Today, Day 14"
                 android:textColor="#1C0D12"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/logOutBtn"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="75dp"
                 android:src="@drawable/baseline_logout_24" />
 
 
@@ -94,6 +94,7 @@
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/DietBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
@@ -131,6 +132,7 @@
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/FitnessBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
@@ -169,6 +171,7 @@
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/MindfulnessBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"

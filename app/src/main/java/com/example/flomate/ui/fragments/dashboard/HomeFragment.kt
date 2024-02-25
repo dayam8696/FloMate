@@ -81,22 +81,37 @@ class HomeFragment : BaseFragment() {
             when (daysRemaining) {
                 in 0..5 -> {
                     binding.phase.text = "You're in the Menstrual phase"
+                    binding.DietBtn.text = "Iron-rich foods"
+                    binding.FitnessBtn.text = "Light exercises, yoga"
+                    binding.MindfulnessBtn.text = "Meditation, deep breathing"
                 }
 
                 in 6..13 -> {
                     binding.phase.text = "You're in the Follicular phase"
+                    binding.DietBtn.text = " High protein, veggies"
+                    binding.FitnessBtn.text = "Cardio, strength training"
+                    binding.MindfulnessBtn.text = "Yoga, meditation, walks"
                 }
 
                 14 -> {
                     binding.phase.text = "You're in the Ovulatory phase"
+                    binding.DietBtn.text = " Leafy greens, fruits"
+                    binding.FitnessBtn.text = " Cardio, HIIT workouts"
+                    binding.MindfulnessBtn.text = "Positive affirmations, visualization"
                 }
 
                 in 15..28 -> {
                     binding.phase.text = "You're in the Luteal phase"
+                    binding.DietBtn.text = "Complex carbs, protein"
+                    binding.FitnessBtn.text = " Moderate intensity exercises"
+                    binding.MindfulnessBtn.text = "Relaxation techniques, journaling"
                 }
 
                 else -> {
                     binding.phase.text = "Your period is about to start"
+                    binding.DietBtn.text = "Hydrating foods, iron-rich"
+                    binding.FitnessBtn.text = "Gentle yoga, walking"
+                    binding.MindfulnessBtn.text = "Deep breathing, gentle stretches"
                 }
             }
         }
