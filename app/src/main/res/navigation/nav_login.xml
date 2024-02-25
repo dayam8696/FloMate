@@ -30,5 +30,9 @@
         android:id="@+id/homeFragment"
         android:name="com.example.flomate.ui.fragments.dashboard.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/home_fragment"/>
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
 </navigation>

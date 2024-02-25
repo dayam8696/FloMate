@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
 import com.example.flomate.R
 import com.example.flomate.databinding.HomeFragmentBinding
 import com.example.flomate.ui.fragments.BaseFragment
@@ -16,6 +15,7 @@ class HomeFragment : BaseFragment() {
     private val binding by lazy { HomeFragmentBinding.inflate(layoutInflater) }
     private val viewModel: DashboardViewModel by activityViewModels()
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -25,14 +25,18 @@ class HomeFragment : BaseFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
+
         navigationVisibility(true)
         binding.WorkoutBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_workoutFragment)
+           navigateTo(R.id.action_homeFragment_to_workoutFragment)
         }
         binding.FocusBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_focusOnFragment)
+            navigateTo(R.id.action_homeFragment_to_focusOnFragment)
         }
+
+
 
     }
 
