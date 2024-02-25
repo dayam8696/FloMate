@@ -12,9 +12,17 @@ FlowMate is a comprehensive mobile application designed to address critical aspe
 Our primary goal is to empower women worldwide by providing them with essential tools and resources for effective menstrual cycle management, ultimately enhancing their overall menstrual health and well-being.
 
 ## Screenshots 📱
-![Screenshot 1](/path/to/screenshot1.png)
-![Screenshot 2](/path/to/screenshot2.png)
-![Screenshot 3](/path/to/screenshot3.png)
+### Login and Signup
+
+### Home Page
+
+### Period Tracker & Calender 
+
+### Map : Sanitization Places
+
+### Valentina : AI Chatbot
+
+### Sign Out
 
 ## Usage 🌼
 To use the app, simply download it from the app store on your mobile device and follow the on-screen instructions to set up your account. For any assistance or queries, feel free to contact our support team through the app's chatbot feature.
