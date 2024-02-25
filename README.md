@@ -27,7 +27,7 @@ Empower women globally through our comprehensive mobile application, offering se
 
 ![9](https://github.com/dayam8696/FloMate/assets/83868776/d1585c89-7967-49f5-aef5-ded4e887b379)
 
-### Period Tracker & Calender 
+### Period Tracker & Calender 📆📆
 
 ![4](https://github.com/dayam8696/FloMate/assets/83868776/1fc6dffa-63ab-48ef-9154-8459a545da12)
 
