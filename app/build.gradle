@@ -26,6 +26,7 @@ android {
             buildConfigField "String", "BASE_URL", "\"https://bdpy0id92e.execute-api.ap-south-1.amazonaws.com/Prod/\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
         debug {
             buildConfigField "String", "BASE_URL", "\"https://bdpy0id92e.execute-api.ap-south-1.amazonaws.com/Prod/\""

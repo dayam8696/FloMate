@@ -53,7 +53,6 @@ class CalendarFragment : BaseFragment() {
                 }
 
                 is ApiResult.Error -> {
-                    showToast("Something Went Wrong!!")
                 }
             }
         }

@@ -82,8 +82,7 @@ class DialogueFragment : DialogFragment() {
                 }
 
                 is ApiResult.Error -> {
-                    Toast.makeText(requireContext(), "Something went wrong!!", Toast.LENGTH_SHORT)
-                        .show()
+
                 }
             }
         }

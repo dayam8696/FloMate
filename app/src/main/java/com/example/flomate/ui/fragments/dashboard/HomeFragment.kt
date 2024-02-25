@@ -57,7 +57,6 @@ class HomeFragment : BaseFragment() {
                 }
 
                 is ApiResult.Error -> {
-                    showToast("Something Went Wrong!!")
                 }
             }
         }
