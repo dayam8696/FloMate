@@ -17,6 +17,9 @@
         android:theme="@style/Theme.FloMate"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.DashboardActivity"
             android:exported="false" />
         <activity

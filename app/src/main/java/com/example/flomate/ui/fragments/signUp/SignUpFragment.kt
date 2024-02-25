@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.flomate.R
 import com.example.flomate.databinding.SignUpFragmentBinding
+import com.example.flomate.ui.activities.LoginActivity
 import com.example.flomate.ui.fragments.BaseFragment
 import com.example.flomate.utils.isValidEmail
 import com.google.firebase.auth.FirebaseAuth
@@ -14,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth
 class SignUpFragment : BaseFragment() {
     private val binding by lazy { SignUpFragmentBinding.inflate(layoutInflater) }
     private lateinit var firebaseAuth: FirebaseAuth
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
