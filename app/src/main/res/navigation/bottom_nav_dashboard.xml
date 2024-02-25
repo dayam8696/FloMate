@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_workoutFragment"
             app:destination="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_focusOnFragment"
+            app:destination="@id/focusOnFragment" />
     </fragment>
     <fragment
         android:id="@+id/calendarFragment"
@@ -32,6 +35,12 @@
     <fragment
         android:id="@+id/workoutFragment"
         android:name="com.example.flomate.ui.fragments.dashboard.WorkoutFragment"
-        android:label="WorkoutFragment" />
+        android:label="WorkoutFragment"
+        tools:layout="@layout/workout_fragment"/>
+    <fragment
+        android:id="@+id/focusOnFragment"
+        android:name="com.example.flomate.ui.fragments.dashboard.FocusOnFragment"
+        android:label="FocusOnFragment"
+        tools:layout="@layout/focus_on_fragment"/>
 
 </navigation>

@@ -13,5 +13,7 @@ object Constants {
     const val CHAT_BOT = "https://ameenurrehman.github.io/Valentina/"
 
     const val WORK_OUT = "https://www.sweat.com/blogs/life/exercise-during-period"
+    const val FOCUS_ONA = "https://www.healthline.com/health/womens-health/what-to-eat-during-period#foods-to-eat"
+    const val FOCUS_ONB = "https://www.purplle.com/magazine/article/dos-and-don-ts-you-should-follow-during-periods"
 
 }

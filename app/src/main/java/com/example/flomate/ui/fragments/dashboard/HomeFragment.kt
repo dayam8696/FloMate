@@ -30,6 +30,9 @@ class HomeFragment : BaseFragment() {
         binding.WorkoutBtn.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_workoutFragment)
         }
+        binding.FocusBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_focusOnFragment)
+        }
 
     }
 
