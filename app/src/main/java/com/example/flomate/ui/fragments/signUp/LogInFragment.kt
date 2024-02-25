@@ -40,10 +40,6 @@ class LogInFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         firebaseAuth = FirebaseAuth.getInstance()
 
-        if (SharedService.isLogin) {
-            openIntent()
-        }
-
         setupClickListeners()
 
 
