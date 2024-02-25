@@ -21,11 +21,11 @@ Empower women globally through our comprehensive mobile application, offering se
 
 ### Home Page
 
-<img src="https://github.com/dayam8696/FloMate/assets/83868776/ac2556bc-b2c8-4987-81bd-740f44bd2169" width="200" height="425">
+<img src="https://github.com/dayam8696/FloMate/assets/93484102/41f54ab9-9a5f-4510-aa8e-0f587d6685b1" width="200" height="425">
 
 <img src="https://github.com/dayam8696/FloMate/assets/83868776/65243e4b-0894-425a-b1fc-464ff815e07c" width="200" height="425">
 
-<img src="https://github.com/dayam8696/FloMate/assets/83868776/d1585c89-7967-49f5-aef5-ded4e887b379" width="200" height="425">
+<img src="https://github.com/dayam8696/FloMate/assets/93484102/fe290ce1-51d1-41de-8efd-e06e9b2e280e" width="200" height="425">
 
 ### Period Tracker & Calendar 📆📆
 
