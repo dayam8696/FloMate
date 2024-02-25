@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina</title>
 
+
+    <!-- Import the Botpress WebChat JavaScript file -->
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<body style="background: url('https://images.herzindagi.info/image/2022/Nov/period-abnormalities-you-must-not-ignore.jpg') no-repeat center center fixed; background-size: cover; color: #333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></body>
+<script>
+    window.botpressWebChat.init({
+        'botId': 'cfccb752-259d-4baa-aa05-db54d5dd65d5',
+        'clientId': 'cfccb752-259d-4baa-aa05-db54d5dd65d5',
+
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+        "messagingUrl": "https://messaging.botpress.cloud",
+
+        "botName": "Valentina",
+
+        "containerWidth": "100%25",
+        "layoutWidth": "100%25",
+
+        "hideWidget": false,
+        'disableAnimations': false,
+        'closeOnEscape': true,
+        'showConversationsButton': false,
+        'enableTranscriptDownload': false,
+        'stylesheet': 'https://webchat-styler-css.botpress.app/prod/283265dc-3025-4bba-ad96-d01eecf7d48f/v45237/style.css',
+    });
+
+    // Opens up the Chatbot by default
+    window.botpressWebChat.onEvent(
+        function () {
+            window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+    );
+</script>
+</head>
+</html>
