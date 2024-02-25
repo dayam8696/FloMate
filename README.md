@@ -9,7 +9,7 @@ FlowMate is a comprehensive mobile application designed to address critical aspe
 - **Chatbot Support:** Get instant personalized support and information on menstrual health through our intelligent chatbot.
   
 ## Project Goals 🌻
-Our primary goal is to empower women worldwide by providing them with essential tools and resources for effective menstrual cycle management, ultimately enhancing their overall menstrual health and well-being.
+Empower women globally through our comprehensive mobile application, offering seamless access to crucial information, sanitation facilities, and personalized support. Our mission is to facilitate effective menstrual cycle management, ultimately elevating menstrual health and overall well-being for women worldwide.
 
 ## Screenshots 📱
 ### Login and Signup
