@@ -125,7 +125,7 @@ class LogInFragment : BaseFragment() {
 //                findNavController().navigate(R.id.action_logInFragment_to_homeFragment)
                 //open new intent
             } else {
-                showToast(it.exception.toString())
+                showToast("Please enter correct credentials")
                 hideLoader()
             }
         }
